@@ -1,16 +1,9 @@
-/*  your css code here. If applicable */
-:root{
-
---line-border-fill: rgb(56, 193, 235);
---line-border-empty: rgb(197, 197, 197);
-
-
-
-
+:root {
+    --line-border-fill: rgb(56, 193, 235);
+    --line-border-empty: rgb(197, 197, 197);
 }
 
-
-body{
+body {
     background-color: #929292;
     display: flex;
     align-items: center;
@@ -20,62 +13,61 @@ body{
     height: 100vh;
 }
 
-.main-container{
+.main-container {
     text-align: center;
 }
-.proces{
+
+.proces {
     display: flex;
     justify-content: space-between;
     position: relative;
     max-width: 100%;
     width: 350px;
     margin-bottom: 30px;
-
 }
 
-.proces::before{
-    content:  '';
-    background-color:var(--line-border-empty);
+.proces::before {
+    content: '';
+    background-color: var(--line-border-empty);
     position: absolute;
     top: 50%;
     left: 0%;
     height: 4px;
     width: 100%;
-    transform:translateY(-50%);
+    transform: translateY(-50%);
     z-index: -1;
-
 }
 
-.progress{
+.progress {
     background-color: var(--line-border-fill);
     position: absolute;
     top: 50%;
     left: 0%;
     height: 4px;
     width: 0%;
-    transform:translateY(-50%);
+    transform: translateY(-50%);
     z-index: -1;
     transition: 0.4s;
 }
 
-.circle{
+.circle {
     background-color: rgb(197, 197, 197);
     color: gray;
     border-radius: 50%;
     height: 50px;
     width: 50px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-transition: .4s ease;
-border:3px solid    var(--line-border-empty);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .4s ease;
+    border: 3px solid var(--line-border-empty);
 }
 
-
-.circle.active{
-    border-color:  var(--line-border-fill) ;
+.circle.active {
+    border-color: var(--line-border-fill);
 }
-.btn{
+
+.btn {
     background-color: var(--line-border-fill);
     color: white;
     border: 0;
@@ -83,26 +75,17 @@ border:3px solid    var(--line-border-empty);
     cursor: pointer;
     font-family: inherit;
     padding: 8px 30px;
-
 }
 
-
-.btn:active{
+.btn:active {
     transform: scale(0.98);
 }
 
-.btn:focus{
+.btn:focus {
     outline: 0;
 }
 
-.btn:disabled{
+.btn:disabled {
     background-color: var(--line-border-empty);
     cursor: not-allowed;
 }
-
-
-
-
-
-
-
